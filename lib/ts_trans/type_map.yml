@@ -1,0 +1,25 @@
+# String types
+string: string
+text: string
+
+# Number types
+integer: number
+enum: number
+bigint: number
+float: number
+decimal: number
+
+# JSON types
+json: Record<string, any>
+jsonb: Record<string, any>
+
+# Binary
+binary: string
+
+# Boolean type
+boolean: boolean
+
+# Time types
+date: string
+datetime: string
+timestamp: string

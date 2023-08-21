@@ -1,0 +1,2 @@
+class NotNullTypeDef < ApplicationRecord
+end

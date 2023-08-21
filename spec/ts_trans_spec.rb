@@ -5,7 +5,11 @@ RSpec.describe TsTrans do
     expect(TsTrans::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'generate schema file' do
+    path = described_class.configuration.output
+    File.delete(path) if File.exist?(path)
+
+    described_class.generate
+    assert File.exist?(path)
   end
 end
